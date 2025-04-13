@@ -131,7 +131,7 @@ class Guid(Structure):
 
     @property
     def parts(self) -> tuple[int, int, int, int, int]:
-        """文字列表現"00000000-0000-0000-0000-000000000000"時のハイフンで区切られた各部分を返します。"""
+        """ "00000000-0000-0000-0000-000000000000"表現のハイフンで区切られた各部分を返します。"""
         return (
             int.from_bytes(self.data[0:4], "little"),
             int.from_bytes(self.data[4:6], "little"),
