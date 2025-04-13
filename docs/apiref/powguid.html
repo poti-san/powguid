@@ -61,6 +61,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">モジュール索引</a></li>
 </ul>
 
         </div>
@@ -98,9 +100,8 @@
 <p>GUID型。</p>
 <p class="rubric">サンプル</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">iid_iunk1</span> <span class="o">=</span> <span class="n">Guid</span><span class="o">.</span><span class="n">from_define</span><span class="p">(</span><span class="mh">0x00000000</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xC0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0x46</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">iid_iunk2</span> <span class="o">=</span> <span class="n">Guid</span><span class="o">.</span><span class="n">from_str</span><span class="p">(</span><span class="s2">&quot;{00000000-0000-0000-C000-000000000046}&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">iid_iunk3</span> <span class="o">=</span> <span class="n">Guid</span><span class="o">.</span><span class="n">from_str_d</span><span class="p">(</span><span class="s2">&quot;00000000-0000-0000-C000-000000000046&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">iid_iunk4</span> <span class="o">=</span> <span class="n">Guid</span><span class="o">.</span><span class="n">from_buffer_copy</span><span class="p">(</span><span class="n">iid_iunk1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">iid_iunk2</span> <span class="o">=</span> <span class="n">Guid</span><span class="o">.</span><span class="n">from_str_d</span><span class="p">(</span><span class="s2">&quot;00000000-0000-0000-C000-000000000046&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">iid_iunk3</span> <span class="o">=</span> <span class="n">Guid</span><span class="o">.</span><span class="n">from_str_b</span><span class="p">(</span><span class="s2">&quot;{00000000-0000-0000-C000-000000000046}&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="py attribute">
@@ -142,7 +143,7 @@
 <dl class="py property">
 <dt class="sig sig-object py" id="powguid.Guid.parts">
 <em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#powguid.Guid.parts" title="Link to this definition"></a></dt>
-<dd><p>&quot;00000000-0000-0000-0000-000000000000&quot;表現のハイフンで区切られた各部分を返します。</p>
+<dd><p>文字列表現&quot;00000000-0000-0000-0000-000000000000&quot;時のハイフンで区切られた各部分を返します。</p>
 </dd></dl>
 
 <dl class="py method">
@@ -172,7 +173,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, potisan.</p>
+    <p>&#169; Copyright 2025, poti-san.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
